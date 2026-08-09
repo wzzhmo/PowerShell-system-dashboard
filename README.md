@@ -26,4 +26,4 @@ first off all open powershell
 
 
 
-                        and hope you like it <3
+          and hope you like it <3
