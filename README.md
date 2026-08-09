@@ -52,7 +52,7 @@ notepad $PROFILE
 
 Copy the contents of:
 
-PowerShell/micro
+PowerShell/profile.ps1
 
 into your profile.
 
@@ -90,6 +90,10 @@ Fastfetch/hmod/config.jsonc
 You can also change the ASCII art in:
 
 Fastfetch/hmod/hm.txt
+
+You can customize the PowerShell profile in:
+
+PowerShell/profile.ps1
 
 Uninstall
 
