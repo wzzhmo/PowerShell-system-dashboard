@@ -9,7 +9,8 @@ first off all oper powershell
 9 - inside .config make a folder name fastfetch
 10 - add my config.jsonc and hm.txt
 11 - in config.jsonc add your user name "C:/Users/%username%/.config/fastfetch/hm.txt",
-
+12 - go to \Documents\WindowsPowerShell folder and add my micro in profile.ps1
+13 - and ofc chane the @username@/.config/fastfetch/config.jsonc"
 
 
                         and hope you like it <3
