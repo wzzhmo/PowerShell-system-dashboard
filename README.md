@@ -1,135 +1,52 @@
 PowerShell System Dashboard
 
-A customized PowerShell terminal setup for Windows, featuring Fastfetch system information, custom ASCII art, and a clean Windows Terminal configuration.
+A simple PowerShell setup for Windows using Fastfetch and Windows Terminal.
 
-Built as my first PowerShell / GitHub project while learning and experimenting with terminal customization.
+I made this project to customize my PowerShell and display my system information when the terminal starts.
 
 Preview
 
-✨ Features
+Features
 
-* 🖥️ System information using Fastfetch
-* 🎨 Custom Windows Terminal configuration
-* 🌙 Catppuccin-inspired terminal theme
-* 🐚 Customized PowerShell profile
-* 🖼️ Custom ASCII art
-* ⚡ Fastfetch automatically runs when PowerShell starts
-* 🪶 Lightweight and simple setup
-* 🛠️ Easy to customize
+* Fastfetch system information
+* Custom ASCII art
+* Custom PowerShell profile
+* Windows Terminal customization
+* Catppuccin theme
+* Fastfetch starts automatically
 
-📁 Project Structure
-
-PowerShell-system-dashboard/
-│
-├── Fastfetch/
-│   └── hmod/
-│       ├── config.jsonc
-│       └── hm.txt
-│
-├── PowerShell/
-│   ├── Terminal
-│   └── micro
-│
-├── finalresult.png
-└── README.md
-
-📋 Requirements
-
-Before installing, make sure you have:
+Requirements
 
 * Windows
-* Windows Terminal
 * PowerShell
+* Windows Terminal
 * Fastfetch
 
-Fastfetch can be installed using winget:
+Install Fastfetch with:
 
 winget install fastfetch
 
-🚀 Installation
+Installation
 
-1. Configure Windows Terminal
+1. Windows Terminal
 
-Open Windows Terminal and go to:
+Open Windows Terminal:
 
 Settings → Open JSON file
 
-Make a backup of your current settings.json first.
-
-Then copy the configuration from:
+Make a backup of your settings.json, then copy the settings from:
 
 PowerShell/Terminal
 
-and add it to your Windows Terminal configuration.
+into your Windows Terminal settings.
 
-⚠️ Be careful when replacing your existing settings.json. Creating a backup first is recommended.
-
-⸻
-
-2. Create the PowerShell Profile
+2. PowerShell Profile
 
 Open PowerShell and run:
 
 New-Item -Path $PROFILE.CurrentUserAllHosts -Type File -Force
 
-This creates your PowerShell profile if it doesn’t already exist.
-
-⸻
-
-3. Install Fastfetch
-
-If you haven’t installed Fastfetch yet:
-
-winget install fastfetch
-
-You can verify the installation with:
-
-fastfetch
-
-⸻
-
-4. Create the Fastfetch Configuration Folder
-
-Create the following folder:
-
-%USERPROFILE%\.config\fastfetch
-
-The final structure should look like:
-
-%USERPROFILE%\
-└── .config\
-    └── fastfetch\
-        ├── config.jsonc
-        └── hm.txt
-
-Copy these files from the repository:
-
-Fastfetch/hmod/config.jsonc
-Fastfetch/hmod/hm.txt
-
-into your Fastfetch folder.
-
-⸻
-
-5. Update Your Username
-
-Open:
-
-config.jsonc
-
-and make sure the path to hm.txt points to your own user directory.
-
-For example:
-
-C:/Users/YourUsername/.config/fastfetch/hm.txt
-
-Replace YourUsername with your Windows username.
-
-⸻
-
-6. Configure the PowerShell Profile
-
-Open your PowerShell profile:
+Then open the profile:
 
 notepad $PROFILE
 
@@ -137,68 +54,55 @@ Copy the contents of:
 
 PowerShell/micro
 
-into your PowerShell profile.
+into your profile.
 
-Make sure the Fastfetch configuration path matches your own username/path.
+3. Fastfetch
 
-⸻
+Create this folder:
 
-▶️ Test It
+%USERPROFILE%\.config\fastfetch
 
-Close and reopen Windows Terminal.
+Then copy:
 
-When PowerShell starts, Fastfetch should automatically display your system information and the custom dashboard.
+Fastfetch/hmod/config.jsonc
+Fastfetch/hmod/hm.txt
 
-If it doesn’t work, try running:
+into it.
 
-fastfetch
+Open config.jsonc and change the path to hm.txt to match your Windows username.
 
-to make sure Fastfetch itself is installed correctly.
+For example:
 
-🎨 Customization
+C:/Users/YourUsername/.config/fastfetch/hm.txt
 
-You can customize the dashboard by editing:
+4. Done
+
+Restart Windows Terminal.
+
+Fastfetch should now start automatically with PowerShell.
+
+Customization
+
+You can change the Fastfetch settings in:
 
 Fastfetch/hmod/config.jsonc
 
-You can also replace:
+You can also change the ASCII art in:
 
 Fastfetch/hmod/hm.txt
 
-with your own ASCII art.
+Uninstall
 
-The Windows Terminal appearance can be customized from:
+Remove the changes from:
 
-PowerShell/Terminal
-
-🧹 Uninstall
-
-To remove the customization, simply remove the changes made to:
-
-* Your PowerShell profile
-* Your Windows Terminal settings.json
+* PowerShell profile
+* Windows Terminal settings.json
 * %USERPROFILE%\.config\fastfetch
 
-Your original Windows Terminal configuration can be restored from the backup you created before installation.
-
-🤝 Contributing
-
-This is a personal learning project, but suggestions and improvements are welcome.
-
-If you find a bug or have an idea for improving the project, feel free to open an Issue or Pull Request.
-
-❤️ Credits
-
-Built with:
+Built With
 
 * PowerShell
 * Windows Terminal
 * Fastfetch
 
-Thanks for checking out my project!
-
-If you like it, ⭐ consider giving the repository a star.
-
-⸻
-
-Made with ❤️ and PowerShell
+Made with ❤️ and PowerShell.
