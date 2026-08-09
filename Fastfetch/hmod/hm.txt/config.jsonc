@@ -4,15 +4,15 @@
     "type": "file",
     "source": "C:/Users/%username%/.config/fastfetch/hm.txt",
     "color": {
-      "1": "#F5E0DC",
-      "2": "#F2CDCD",
-      "3": "#F5C2E7",
-      "4": "#FAB387",
-      "5": "#F9E2AF",
-      "6": "#A6E3A1",
-      "7": "#94E2D5",
-      "8": "#89DCEB",
-      "9": "#74C7EC"
+      "1": "#050507",
+      "2": "#0A0A0D",
+      "3": "#0F0B14",
+      "4": "#160D1D",
+      "5": "#21102B",
+      "6": "#30163D",
+      "7": "#431D55",
+      "8": "#633078",
+      "9": "#8B4FA3"
     },
     "padding": {
       "top": 1,
@@ -27,37 +27,37 @@
     {
       "type": "title",
       "color": {
-        "user": "#F5C2E7",
-        "at": "#CDD6F4",
-        "host": "#89DCEB"
+        "user": "#8B4FA3",
+        "at": "#431D55",
+        "host": "#633078"
       }
     },
     "break",
     {
       "type": "os",
       "key": "",
-      "keyColor": "#89DCEB"
+      "keyColor": "#633078"
     },
     {
       "type": "cpu",
       "key": "",
-      "keyColor": "#F5C2E7"
+      "keyColor": "#8B4FA3"
     },
     {
       "type": "board",
       "key": "󰚗",
-      "keyColor": "#FAB387"
+      "keyColor": "#431D55"
     },
     {
       "type": "memory",
       "key": "",
-      "keyColor": "#A6E3A1",
+      "keyColor": "#633078",
       "format": "{used} / {total} ({percentage})"
     },
     {
       "type": "disk",
       "key": "",
-      "keyColor": "#94E2D5"
+      "keyColor": "#30163D"
     },
     "break",
     {
