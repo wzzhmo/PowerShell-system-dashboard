@@ -101,7 +101,7 @@ Remove the changes from:
 
 * PowerShell profile
 * Windows Terminal settings.json
-* %USERPROFILE%\.config\fastfetch
+* %USERPROFILE%\\.config\fastfetch
 
 Built With
 
